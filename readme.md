@@ -10,10 +10,16 @@ O objetivo deste projeto é revisar e praticar a implementação de classes e m�
 
 ### 1. Classe Círculo
 
-Implemente a classe `Círculo` com os métodos para calcular a área e o raio. Em seguida, instancie dois objetos do tipo `Círculo`:
+Implemente a classe `Círculo` com os métodos para calcular a área e o raio. 
 
-- **Primeiro Círculo:** Obtenha o valor da sua área.
-- **Segundo Círculo:** Obtenha o valor do seu raio.
+#### Atributos:
+- **Radius:** Raio do círculo.
+- **Cor:** cor do círculo.
+- **Área:** Área do cículo.
+
+#### Métodos:
+- **Calcular Área do Círculo:** Recebe um raio e calcula a área do círculo de acordo com o raio informado.
+- **Calcular Raio do Círculo** Recebe uma área e calcula o raio do círculo de acordo com a área informada.
 
 ### 2. Classe Jogo
 
