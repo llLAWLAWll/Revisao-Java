@@ -4,7 +4,7 @@ Este repositório contém exercícios de revisão para a unidade curricular **Mo
 
 ## Objetivos
 
-O objetivo deste projeto é revisar e praticar a implementação de classes e métodos em Java, utilizando conceitos básicos de orientação a objetos.
+O objetivo deste projeto é revisar e praticar a implementação de classes e métodos em Java, utilizando conceitos básicos de orientação a objetos para a atividade de Revisão da UC.
 
 ## Exercícios
 
