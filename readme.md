@@ -1,19 +1,25 @@
 # Revisão Java
 
-Este repositório contém exercícios de revisão para a unidade curricular **Modelos, Métodos e Técnicas da Engenharia de Software**, na área de **Tecnologia e Computação**.
+Este repositório contém exercícios de revisão para a (UC)unidade curricular **Modelos, Métodos e Técnicas da Engenharia de Software**, na área de **Tecnologia e Computação**.
 
 ## Objetivos
 
-O objetivo deste projeto é revisar e praticar a implementação de classes e métodos em Java, utilizando conceitos básicos de orientação a objetos.
+O objetivo deste projeto é revisar e praticar a implementação de classes e métodos em Java, utilizando conceitos básicos de orientação a objetos para a atividade de Revisão da UC.
 
 ## Exercícios
 
 ### 1. Classe Círculo
 
-Implemente a classe `Círculo` com os métodos para calcular a área e o raio. Em seguida, instancie dois objetos do tipo `Círculo`:
+Implemente a classe `Círculo` com os métodos para calcular a área e o raio. 
 
-- **Primeiro Círculo:** Obtenha o valor da sua área.
-- **Segundo Círculo:** Obtenha o valor do seu raio.
+#### Atributos:
+- **Radius:** Raio do círculo.
+- **Cor:** cor do círculo.
+- **Área:** Área do cículo.
+
+#### Métodos:
+- **Calcular Área do Círculo:** Recebe um raio e calcula a área do círculo de acordo com o raio informado.
+- **Calcular Raio do Círculo:** Recebe uma área e calcula o raio do círculo de acordo com a área informada.
 
 ### 2. Classe Jogo
 
@@ -45,4 +51,4 @@ Implemente uma classe `Principal` que contenha um menu interativo para manipular
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/Revisao-Java.git
+   git clone https://github.com/llLAWLAWll
