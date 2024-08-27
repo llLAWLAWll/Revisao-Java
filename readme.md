@@ -1,6 +1,6 @@
 # Revisão Java
 
-Este repositório contém exercícios de revisão para a unidade curricular **Modelos, Métodos e Técnicas da Engenharia de Software**, na área de **Tecnologia e Computação**.
+Este repositório contém exercícios de revisão para a (UC)unidade curricular **Modelos, Métodos e Técnicas da Engenharia de Software**, na área de **Tecnologia e Computação**.
 
 ## Objetivos
 
