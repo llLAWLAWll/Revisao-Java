@@ -17,7 +17,7 @@ public class Main {
         int opcaoMenu = 0;
 
         while (opcaoMenu != 3) {
-            System.out.println("Menu Principal:");
+            System.out.println("\nMenu Principal:");
             System.out.println("1. Exercício 1 - Círculo");
             System.out.println("2. Exercício 2 - Jogo");
             System.out.println("3. Sair");
@@ -48,7 +48,7 @@ public class Main {
         int option = 0;
         Circulo circulo = new Circulo();
         CirculoControle circuloControle = new CirculoControle();
-        while (option != 2) {
+        while (option != 3) {
             System.out.println("\nMenu Exercício 1 - Círculo:");
             System.out.println("1. Calcular Area");
             System.out.println("2. Calcular Raio");
