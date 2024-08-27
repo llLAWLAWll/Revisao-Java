@@ -19,7 +19,7 @@ Implemente a classe `Círculo` com os métodos para calcular a área e o raio.
 
 #### Métodos:
 - **Calcular Área do Círculo:** Recebe um raio e calcula a área do círculo de acordo com o raio informado.
-- **Calcular Raio do Círculo** Recebe uma área e calcula o raio do círculo de acordo com a área informada.
+- **Calcular Raio do Círculo:** Recebe uma área e calcula o raio do círculo de acordo com a área informada.
 
 ### 2. Classe Jogo
 
