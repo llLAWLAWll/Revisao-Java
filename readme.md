@@ -2,6 +2,9 @@
 
 Este repositório contém exercícios de revisão para a (UC)unidade curricular **Modelos, Métodos e Técnicas da Engenharia de Software**, na área de **Tecnologia e Computação**.
 
+- **Funcionalidade:** O sistema é construído para ser operado via terminal e realiza suas funções com base em comandos específicos.
+- **Tratamento de Exceções:** O código não inclui tratamento de exceções. Isso significa que ele não lida com erros de forma sofisticada e pode falhar se ocorrerem situações inesperadas.
+
 ## Objetivos
 
 O objetivo deste projeto é revisar e praticar a implementação de classes e métodos em Java, utilizando conceitos básicos de orientação a objetos para a atividade de Revisão da UC.
@@ -52,3 +55,5 @@ Implemente uma classe `Principal` que contenha um menu interativo para manipular
 1. Clone o repositório:
    ```bash
    git clone https://github.com/llLAWLAWll
+   
+2. Após clonar o projeto basta compilar na classe `Main` e utilizar o terminal.
