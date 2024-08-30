@@ -1,9 +1,12 @@
 package org.example;
 
 import org.example.controle.CirculoControle;
+import org.example.controle.JogoControle;
 import org.example.modelo.Circulo;
 import org.example.modelo.Jogo;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -11,9 +14,10 @@ import java.util.Scanner;
  */
 public class Main {
 
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Jogo jogo = new Jogo();
         int opcaoMenu = 0;
 
         while (opcaoMenu != 3) {
@@ -89,35 +93,75 @@ public class Main {
      */
     public static void menuExercicio2(Scanner scanner) {
         int option = 0;
+        JogoControle jogoControle = new JogoControle();
+        List<Jogo> listaJogos = new ArrayList<>();
+        Jogo jogo = null;
+        Integer classificacaoEtaria;
+        double percentual;
 
-        while (option != 5) {
+        while (option != 6) {
             System.out.println("\nMenu Exercício 2 - Jogo:");
-            System.out.println("1. Aplicar desconto no jogo");
-            System.out.println("2. Aumentar preço do jogo");
-            System.out.println("3. Atualizar classificação etária do jogo");
-            System.out.println("4. Mostrar detalhes dos jogos");
-            System.out.println("5. Voltar ao menu principal");
+            System.out.println("1. Inserir jogo");
+            System.out.println("2. Aplicar desconto no jogo");
+            System.out.println("3. Aumentar preço do jogo");
+            System.out.println("4. Atualizar classificação etária do jogo");
+            System.out.println("5. Mostrar detalhes dos jogos");
+            System.out.println("6. Voltar ao menu principal");
             System.out.print("Escolha uma opção: ");
             option = scanner.nextInt();
 
             switch (option) {
                 case 1:
-                    // Código para aplicar desconto no jogo
-                    System.out.println("Aplicando desconto no jogo...");
+
+                    jogo = new Jogo();
+
+                    System.out.println("Insira o nome do jogo:");
+                    String nome = scanner.next();
+                    jogo.setTitulo(nome);
+
+                    System.out.println("Insira a classificação Etária do jogo (Número Inteiro):");
+                    classificacaoEtaria = scanner.nextInt();
+                    jogo.setClassificacaoEtaria(classificacaoEtaria);
+
+                    System.out.println("Insira o preço do jogo (Valor com '.'):");
+                    double preco = scanner.nextDouble();
+                    jogo.setPreco(preco);
+
+                    listaJogos.add(jogo);
                     break;
+
                 case 2:
-                    // Código para aumentar preço do jogo
-                    System.out.println("Aumentando preço do jogo...");
+                    System.out.println("Insira o percentual de desconto do jogo (%):");
+                    percentual  = scanner.nextDouble();
+
+                    jogoControle.aplicarDesconto(jogo, percentual);
+                    System.out.println("Jogo atualizado com sucesso:\n " + jogo);
                     break;
                 case 3:
-                    // Código para atualizar classificação etária do jogo
-                    System.out.println("Atualizando classificação etária do jogo...");
+                    System.out.println("Insira o percentual de Aumento do jogo (%):");
+                     percentual = scanner.nextDouble();
+
+                    jogoControle.aumentarPreco(jogo, percentual);
+                    System.out.println("Jogo atualizado com sucesso!");
                     break;
                 case 4:
-                    // Código para mostrar detalhes dos jogos
-                    System.out.println("Mostrando detalhes dos jogos...");
+                    System.out.println("Insira a nova classificação etária do jogo:");
+                    classificacaoEtaria = scanner.nextInt();
+
+                    jogoControle.atualizarClassificacao(jogo, classificacaoEtaria);
+                    System.out.println("Jogo atualizado com sucesso!");
                     break;
                 case 5:
+
+                    if (listaJogos.size() > 0) {System.out.println("Mostrando detalhes dos jogos...");}
+                    else {
+                        System.out.println(" Nenhum Jogo Encontrado");
+                    }
+
+                    listaJogos.forEach(System.out::println);
+
+                    break;
+                case 6:
                     System.out.println("Voltando ao menu principal...");
                     break;
                 default:
