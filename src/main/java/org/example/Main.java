@@ -96,7 +96,7 @@ public class Main {
         JogoControle jogoControle = new JogoControle();
         List<Jogo> listaJogos = new ArrayList<>();
         Jogo jogo = null;
-        Integer classificacaoEtaria;
+        int classificacaoEtaria;
         double percentual;
 
         while (option != 6) {
@@ -153,7 +153,7 @@ public class Main {
                     break;
                 case 5:
 
-                    if (listaJogos.size() > 0) {System.out.println("Mostrando detalhes dos jogos...");}
+                    if (!listaJogos.isEmpty()) {System.out.println("Mostrando detalhes dos jogos...");}
                     else {
                         System.out.println(" Nenhum Jogo Encontrado");
                     }
